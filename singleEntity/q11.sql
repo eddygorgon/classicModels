@@ -1,0 +1,1 @@
+SELECT ROUND(AVG(MSRP/buyPrice)*100-100,1) AS 'Avg Markup' FROM Products
