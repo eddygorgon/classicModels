@@ -1,3 +1,6 @@
+# List the names of customers and their corresponding order number where a particular 
+# order from that customer has a value greater than $25,000?
+
 SELECT c.customerName, d.orderNumber, SUM(d.priceEach*d.quantityOrdered) AS orderValue
 FROM OrderDetails AS d
 JOIN Orders AS o ON d.orderNumber = o.orderNumber
